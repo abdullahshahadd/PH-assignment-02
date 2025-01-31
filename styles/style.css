@@ -6,6 +6,11 @@ body {
 
 /* shared styles */
 
+main section {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .display-flex {
     display: flex;
 }
@@ -15,6 +20,7 @@ body {
     height: 2.5em;
     border: none;
     border-radius: 12px;
+    font-size: 1.25rem;
 }
 
 /* nav styles */
@@ -36,7 +42,7 @@ nav li {
     list-style: none;
 }
 
-.banner-btn {
+.nav-btn {
     background-color: orange;
     color: white;
 }
@@ -57,6 +63,39 @@ nav li {
     color: #5D58EF;
 }
 
+/* banner styles */
+
+.banner-section {
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.banner-details {
+    width: 640px;
+}
+
+.banner-title {
+    font-size: 3.9rem;
+    margin-bottom: 24px;
+}
+
+.banner-btn {
+    background-color: black;
+    color: white;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+#empower {
+    color: orange;
+}
+
+#vison {
+    color: #05D4DF;
+}
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -75,5 +114,30 @@ nav li {
         padding: 5px;
         justify-content: space-between;
         border: 1px solid orange;
+    }
+
+    .banner-section {
+        width: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .banner-details {
+        width: auto;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-img-container {
+        width: 90%;
+    }
+
+    .banner-img {
+        width: 100%; /* Make image responsive */
+        height: auto;
     }
 }
