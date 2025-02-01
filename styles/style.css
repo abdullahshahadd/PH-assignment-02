@@ -191,6 +191,7 @@ nav li {
 
 .stories-section {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .stories-box {
@@ -262,6 +263,31 @@ nav li {
     font-size: 2.875rem;
 }
 
+/* footer styles */
+
+footer {
+    margin-top: 0;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #01ACFD;
+}
+
+.education {
+    width: 10%;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.education-description {
+    width: 100%;
+}
+
+
+footer .mid {
+    margin-top: 0;
+}
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -343,5 +369,23 @@ nav li {
     .large-card-btn {
         text-align: center;
         padding: 7px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 10px;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    .education {
+        width: 100%;
     }
 }
