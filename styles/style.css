@@ -6,7 +6,7 @@ body {
 
 /* shared styles */
 
-main section {
+main section, .stories-box {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -14,6 +14,10 @@ main section {
 
 .display-flex {
     display: flex;
+}
+
+.display-block {
+    display: block;
 }
 
 .primary-btn {
@@ -176,6 +180,88 @@ nav li {
     align-items: center;
     justify-content: center;
 }
+
+/* stories styles */
+
+.stories-section {
+    width: 100%;
+    background-image: url(../assets/bg.png), linear-gradient(white, #fea10148);
+    margin-bottom: 100px;
+}
+
+.stories-section {
+    text-align: center;
+}
+
+.stories-box {
+    gap: 20px;
+}
+
+.large-card {
+    background-color: white;
+    width: 50%;
+    border-radius: 16px;
+}
+
+.large-card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.large-card-btn {
+    background-color: #3CD8E8;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+
+.large-card-title, .large-card-description {
+    padding: 1em;
+}
+
+.small-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.small-card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.small-card-title {
+    padding: 10px;
+}
+
+.small-card {
+    background-color: white;
+    border-radius: 16px;
+}
+
+#green-bg {
+    background-color: #95B226;
+}
+
+#purple-bg {
+    background-color: #5D58F0;
+}
+
+.view-btn {
+    background-color: black;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.stories-title {
+    font-size: 2.875rem;
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -217,7 +303,45 @@ nav li {
     }
 
     .banner-img {
-        width: 100%; /* Make image responsive */
+        width: 90%;
         height: auto;
+    }
+
+    .curriculum-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .curriculum-section h1 {
+        width: auto;
+    }
+
+    .curriculum-container {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .curriculum-card {
+        width: 100%;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+    .stories-box {
+        flex-direction: column;
+    }
+
+    .large-card {
+        display: none;
+    }
+
+    .large-card-btn {
+        text-align: center;
+        padding: 7px;
     }
 }
